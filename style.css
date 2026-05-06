@@ -142,6 +142,42 @@ body {
     transform: translateY(0);
 }
 
+.products {
+    width: 100%;
+    display: grid;
+    gap: 24px;
+    justify-items: center;
+}
+
+.product-card--inactive {
+    filter: grayscale(1);
+    opacity: 0.75;
+}
+
+.product-card--inactive .cart-button {
+    background-color: #697586;
+}
+
+.product-card--inactive .cart-button:hover {
+    background-color: #52606d;
+}
+
+.product-card--inactive .product-badge {
+    background-color: #697586;
+}
+
+@media (min-width: 900px) {
+    .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 1100px;
+        align-items: stretch;
+    }
+
+    .product-card {
+        max-width: 100%;
+    }
+}
+
 @keyframes cardFadeIn {
     from {
         opacity: 0;
