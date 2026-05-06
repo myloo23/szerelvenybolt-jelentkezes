@@ -191,22 +191,11 @@ body {
 }
 
 @media (min-width: 768px) {
-    .product-card {
-        max-width: 760px;
-        display: grid;
-        grid-template-columns: 1fr 1.1fr;
-    }
-
-    .product-image {
-        height: auto;
-        min-height: 360px;
-    }
-
     .product-content {
-        padding: 34px;
+        padding: 26px;
     }
 
     .product-title {
-        font-size: 28px;
+        font-size: 24px;
     }
 }
