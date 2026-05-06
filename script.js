@@ -46,7 +46,7 @@ function renderProducts(data) {
     });
 }
 
-fetch("products.json")
+fetch("products.php")
     .then(res => res.json())
     .then(data => {
         renderProducts(data);
